@@ -14,8 +14,9 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D32A3245446233
 # Install blender
 apt-get update
 apt-get install -y x11-utils
-apt-get -y install alsa-utils
-apt-get -y install blender
+apt-get install -y alsa-utils
+apt-get install -y avahi-utils
+apt-get install -y blender
 
 %hel
 $ singularity run blender.sif [scene file] [output directory] <frame | start frame:end frame>
